@@ -10,21 +10,23 @@
 
 	<body>
 		<h1>Fancify my Text</h1>
+		<!-- Your UI controls go here -->
+
         <fieldset>
-            <legend>Text</legend>
+            <legend>Text to make super fancy</legend>
             <textarea id="inputText" rows="4" cols="30"></textarea>
         </fieldset>
 
-		<!-- Your UI controls go here -->
 		<fieldset>
 			<legend>Fancify</legend>
 			<button onclick="makeBigger()">Bigger!</button>
 			<br>
-			<input type="radio" id="FancyShmancy" name="fav_language" value="FancyShmancy"><label for="FancyShmancy">FancyShmancy</label>
+			<label><input type="radio" name="styleOption" id="FancyShmancy" onchange="styleChange()">FancyShmancy</label>
 			<br>
-			<input type="radio" id="BoringBetty" name="fav_language" value="BoringBetty"><label for="BoringBetty">BoringBetty</label>
+			<label><input type="radio" name="styleOption" id="BoringBetty" onchange="styleChange()">BoringBetty</label>
 			<br>
 		</fieldset>
-		
+		<br>
+		<button id="Moo" onclick="addMoo()">Moo!</button>
 	</body>
 </html>
